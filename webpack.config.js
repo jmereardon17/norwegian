@@ -1,15 +1,18 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 
 module.exports = {
   mode: 'production',
+  stats: 'none',
   entry: {
     'app': './src/js/index.js'
   },
   output: {
     path: path.resolve(__dirname, 'docs'),
     filename: 'app.js',
+    clean: true
   },
   watch: true,
   target: ['web', 'es5'],
@@ -17,7 +20,8 @@ module.exports = {
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       template: 'src/index.html'
-    })
+    }),
+    new FriendlyErrorsWebpackPlugin()
   ],
   module: {
     rules: [
@@ -34,21 +38,15 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              modules: true
+              importLoaders: 1
             }
           },
           {
             loader: "postcss-loader",
             options: {
               postcssOptions: {
-                plugins: [
-                  [
-                    "postcss-preset-env",
-                    {
-                      // Options
-                    },
-                  ],
-                ],
+                parser: 'postcss-scss',
+                plugins: [ 'postcss-preset-env' ]
               },
             },
           },

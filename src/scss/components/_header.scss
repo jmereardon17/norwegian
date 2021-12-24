@@ -1,0 +1,23 @@
+.main-header {
+  background: linear-gradient(to right, $macaroni-an-cheese, $wild-watermelon);
+  color: $white;
+  padding: 1rem 0;
+  margin-bottom: 3rem;
+  text-align: center;
+  @include break('md') {
+    text-align: left;
+  }
+  .main-nav {
+    @include break('md') {
+      @include flex($align: center);
+    }
+    &__link {
+      display: inline-block;
+      color: $white;
+      padding: 5px 10px;
+      &:hover {
+        color: $macaroni-an-cheese;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.card {
+  @extend %rounded;
+  @include flex($dir: column);
+  box-shadow: 0 3px 10px rgba($black, .25);
+  padding: 20px;
+  color: $white;
+  height: 100%;
+  @each $theme, $color1, $color2 in $theme-colors {
+    &--#{$theme} {
+      background: radial-gradient($color1, $color2);
+    }
+  }
+
+  &__header {
+    @include flex($wrap: nowrap);
+  }
+
+  &__title {
+    margin: 0 0 0 1rem;
+  }
+
+  footer {
+    margin-top: auto;
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.title {
+  font-size: 2.5rem;
+  @include break('md') {
+    margin-bottom: 0;
+  }
+}
+
+.card {
+  &__icon {
+    font-size: 1.75rem;
+  }
+  &__title {
+    font-size: 1.3rem;
+  }
+  &__text {
+    font-size: 1.25rem;
+  }
+  &__date {
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,21 @@
+@mixin break($breakpoint, $map: $grid-breakpoints) {
+  $value: map-get($map, $breakpoint);
+
+  @if ($value) {
+    @media (min-width: $value) {
+      @content;
+    }
+  }
+  @else {
+    @error "No breakpoint value was found.";
+  }
+}
+
+@mixin flex($dir: null, $wrap: wrap, $just: null, $align: null) {
+  display: flex;
+  flex-wrap: $wrap;
+  flex-direction: $dir;
+  justify-content: $just;
+  align-items: $align;
+  @content;
+}
