@@ -7,9 +7,15 @@
   @include break('md') {
     text-align: left;
   }
+  .title {
+    background: url('https://ak.picdn.net/shutterstock/videos/800254/thumb/1.jpg') 10% 5% / auto no-repeat;
+    background-clip: text;
+    color: transparent;
+  }
   .main-nav {
+    text-align: center;
     @include break('md') {
-      @include flex($align: center);
+      @include flex($just: space-between, $align: center);
     }
     &__link {
       display: inline-block;

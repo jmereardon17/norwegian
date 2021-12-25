@@ -5,6 +5,11 @@
   }
 }
 
+.heading {
+  color: rgba($wild-watermelon, .5);
+  margin-bottom: 2rem;
+}
+
 .card {
   &__icon {
     font-size: 1.75rem;
@@ -18,4 +23,8 @@
   &__date {
     font-weight: 600;
   }
+}
+
+.hint {
+  color: $wild-watermelon;
 }

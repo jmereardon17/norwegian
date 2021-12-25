@@ -1,0 +1,47 @@
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba($black, .5);
+}
+
+.modal {
+  @extend %rounded;
+  padding: 20px;
+  background: $white;
+  box-shadow: 0 3px 10px rgba($black, .25);
+  text-align: center;
+  max-width: 600px;
+  margin: 25vh auto auto;
+  position: relative;
+  line-height: 1.65;
+  &__close {
+    cursor: pointer;
+    color: $wild-watermelon;
+    font-size: 25px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+  &__title {
+    font-size: 1.15rem;
+    color: $wild-watermelon;
+    margin-top: 0;
+  }
+  &__text {
+    @include break('md') {
+      width: 80%;
+      margin: auto;
+    }
+  }
+  &__list {
+    display: inline-block;
+    text-align: left;
+    li {
+      margin-left: 1rem;
+    }
+  }
+}

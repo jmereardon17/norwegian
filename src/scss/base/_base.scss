@@ -15,8 +15,17 @@ a {
   }
 }
 
-ul {
+ul,
+ol,
+dl {
   margin: 0;
   padding: 0;
+}
+
+ul {
   list-style: none;
+}
+
+section {
+  margin-bottom: 2.5rem;
 }

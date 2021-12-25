@@ -14,9 +14,9 @@ const Card = (props) => (
     <section className={`card card--${props.type}`}>
       <header className="card__header">
         <i className={`card__icon ${icons[props.type]}`} />
-        <h2 className="card__title">{props.title}</h2>
+        <h3 className="card__title">{props.title}</h3>
       </header>
-      <p className="card__text">{props.text}</p>
+      <p className="card__text">{props.summary}</p>
       <footer className="card__footer">
         <p>Learned on <span className="card__date">{props.date}</span></p>
       </footer>

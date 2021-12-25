@@ -1,10 +1,16 @@
 .card {
   @extend %rounded;
   @include flex($dir: column);
+  cursor: pointer;
   box-shadow: 0 3px 10px rgba($black, .25);
   padding: 20px;
   color: $white;
   height: 100%;
+  transition: .4s ease;
+  &:hover {
+    box-shadow: 0 3px 34px rgba($black, .45);
+    transform: scale(1.05);
+  }
   @each $theme, $color1, $color2 in $theme-colors {
     &--#{$theme} {
       background: radial-gradient($color1, $color2);
