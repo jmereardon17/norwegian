@@ -27,17 +27,24 @@ const concepts = [
     title: 'Introductions',
     summary: 'Introducing yourself to others.',
     notes: `<ul class="modal__list">
-      <li><span>Hi. I'm called Jamie.) Hei. Jeg heter Jamie.</span></li>
+      <li><span>Hi. I'm called Jamie.) Hei. Jeg heter Jamie. <span class="hint">Hey. Yae heter Yamie</span></span></li>
       <li><span>Hi. My name is Jamie.) Hei. Mitt navn er Jamie.</span></li>
-      <li><span>(Pleased to meet you.) Hyggelig. <span class="hint">(Higg eler)</span></span></li>
+      <li><span>Pleased to meet you.) Hyggelig. <span class="hint">(Higg eler)</span></span></li>
+      <li><span>Nice to meet you.) Hyggelig å møte deg. <span class="hint">(Higg eler a meta die.)</span></span></li>
     </ul>`,
     date: '23.12.21'
   },
   {
     type: 'conversation',
-    title: 'Conversation Starters',
-    summary: 'Basic conversational starters.',
-    notes: '',
+    title: 'Talk about the Weather',
+    summary: 'How to ask about the weather.',
+    notes: `<ul class="modal__list">
+      <li><span>What's the weather like?) Hvordan er været? <span class="hint">vordan er varer</span></span></li>
+      <li><span>It's sunny.) Det solrikt. <span class="hint">Der solirikt.</span></span></li>
+      <li><span>It's cloudy.) Det er overskyet. <span class="hint">Der overishet</span></span></li>
+      <li><span>It's rainy.) Det er regnfullt. <span class="hint">Der riynfult</span></span></li>
+      <li><span>It's cold.) Det er kaldt. <span class="hint">Der kalt.</span></span></li>
+    </ul>`,
     date: '23.12.21'
   },
   {
