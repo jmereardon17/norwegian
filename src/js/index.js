@@ -49,8 +49,28 @@ const concepts = [
   },
   {
     type: 'nouns',
-    title: 'Places',
-    summary: 'Learn the names of places.',
+    title: 'Weather words',
+    summary: 'Learn words about the weather.',
+    notes: `<ul class="modal__list">
+      <li><span>cloud) sky <span class="hint">she</span></span></li>
+      <li><span>freeze) fryse <span class="hint">Freezer</span></span></li>
+      <li><span>shower) regnbyge <span class="hint">Rainburger</span></span></li>
+      <li><span>rain) regn <span class="hint">Reign</span></span></li>
+      <li><span>wind) vind <span class="hint">vin</span></span></li>
+      <li><span>windy) vindfullt <span class="hint">vinfult</span></span></li>
+      <li><span>fog) tåkete <span class="hint">tor ki ter</span></span></li>
+      <li><span>snow) snø <span class="hint">snuer</span></span></li>
+      <li><span>drizzle) yr <span class="hint">eir</span></span></li>
+      <li><span>lightning) lyn <span class="hint">lyn</span></span></li>
+      <li><span>humid) fuktig <span class="hint">fuk de</span></span></li>
+      <li><span>temperature) temperatur <span class="hint">tempratuer</span></span></li>
+    </ul>`,
+    date: '23.12.21'
+  },
+  {
+    type: 'conversation',
+    title: 'Family',
+    summary: 'Talk about Family.',
     notes: '',
     date: '23.12.21'
   },
